@@ -31,7 +31,7 @@ import json
 import random
 import traceback
 import pycuda.autoinit  # This is needed for initializing CUDA driver
-import multiprocessing
+from multiprocessing import Process
 import utils_lite.configSrc as cfg
 import tensorflow as tf
 import requests
@@ -457,7 +457,7 @@ def main():
 				logger.info("  {}".format(cv_activities))
 				logger.info("     CV log info: End")
 
-				postprocess(transid, base_url, headers, cv_activities, ls_activities)
+				Process(target=postprocess, args=(transid, base_url, headers, cv_activities, ls_activities))
 				logger.info("   Finished Current Transaction")
 				
 	except KeyboardInterrupt as k:
