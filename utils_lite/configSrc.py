@@ -9,7 +9,7 @@ log_path = "/home/{}/Desktop/".format(user)
 base_path = "/home/{}/Desktop/Icount_lite/".format(user)
 
 ##### Location specific #####
-camera_map =  {"cam0": 23881566, "cam1":23881567, "cam2":23875565}
+camera_map =  {"cam0": 23881566, "cam1":23881567, "cam2":23875565, "cam3":23897010}
 activate_arch = True
 sms_alert = False
 #cls_dict = {0: 'vickies', 1: 'Coca Cola 20z', 2: 'Gatorade 12oz', 3: 'sun_chips', 4: 'doritos', 5: 'lays', 6: 'monster', 7: 'gold_peak', 8: 'Diet Coke (SF)', 9: 'sprite'} #10 prod

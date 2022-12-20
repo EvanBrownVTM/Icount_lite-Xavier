@@ -457,9 +457,10 @@ def main():
 				logger.info("  {}".format(cv_activities))
 				logger.info("     CV log info: End")
 
-				Process(target=postprocess, args=(transid, base_url, headers, cv_activities, ls_activities))
+				#Process(target=postprocess, args=(transid, base_url, headers, cv_activities, ls_activities))
+				postprocess(transid, base_url, headers, cv_activities, ls_activities)
 				logger.info("   Finished Current Transaction")
-				
+
 	except KeyboardInterrupt as k:
 		logger.info("Exiting app\n")
 

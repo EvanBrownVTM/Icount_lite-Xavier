@@ -255,7 +255,8 @@ def main():
 		logger.info('   MACHINE API KEY: {}'.format(machine_api_key))
 		logger.info('   Access token: {}'.format(access_token))
 
-		Trans = ['Testtrans']
+		Trans = ['204bf86b-a7be-4d13-992a-01b4d1b4dc28',  'c24f30e8-46dc-4ee5-8574-c277843124ee',  'd010e4b6-9fac-412d-bc1c-c81d571d8251',  'ee63c9fc-2097-4006-9feb-e1a823401108']
+
 		cv_activities = []
 		ls_activities = []
 

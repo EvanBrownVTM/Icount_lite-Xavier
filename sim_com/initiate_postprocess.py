@@ -9,7 +9,7 @@ channel = connection.channel()
 
 channel.queue_declare(queue="cvPost",durable = True)
 
-data = '{\n "transid": "trans702", \n "cv_activities":"TEST-cv_activities"\n "ls_activities":"TEST-ls_activities"\n}'
+data = '{\n "transid": "trans702", \n "cv_activities":"TEST-cv_activities", \n "ls_activities":"TEST-ls_activities"}'
 mess = json.dumps(data)
 mess =json.loads(mess)
 
